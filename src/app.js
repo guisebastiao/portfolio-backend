@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 
-const TestRouter = require("./src/routes/TestRouter");
-const ContactRouter = require("./src/routes/ContactRouter");
-const CvDownloadRouter = require("./src/routes/CvDownloadRouter");
+const TestRouter = require("./routes/TestRouter");
+const ContactRouter = require("./routes/ContactRouter");
+const CvDownloadRouter = require("./routes/CvDownloadRouter");
 
 class App {
   constructor(){
