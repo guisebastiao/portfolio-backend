@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
+const TestRouter = require("./routes/TestRouter");
 const ContactRouter = require("./routes/ContactRouter");
 const CvDownloadRouter = require("./routes/CvDownloadRouter");
 
@@ -18,6 +19,7 @@ class App {
   }
 
   routes(){
+    this.app.use("/", TestRouter)
     this.app.use("/sendmail", ContactRouter);
     this.app.use("/download", CvDownloadRouter);
   }
